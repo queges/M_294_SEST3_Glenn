@@ -1,8 +1,7 @@
-// Buttons.jsx
-import React from 'react';
+import React from "react";
 
-function Button() {
-    return <button>Klick mich</button>;
+function Button(props) {
+  return <button onClick={props.handler}>{props.text}</button>;
 }
 
 export default Button;
